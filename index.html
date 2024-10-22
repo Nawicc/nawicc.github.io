@@ -6,11 +6,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body style="background: darkgreen; color: white;">
+<body style="color: black;">
+
+
+
 
 <!-- Style -->
 <style>
+body {
+  background-image: url('/PAPER01.png');
+}
 .container {
   position: relative;
   text-align: center;
@@ -27,6 +34,13 @@
   position: absolute;
   top: 8px;
   left: 16px;
+}
+
+div.top-middle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .top-right {
@@ -47,63 +61,86 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+.centered3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-0%, -80%);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
 </style>
   
 <!-- Header -->
 <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
 <div class="container">
-  <img class="w3-image" src="/bilder/Anime_Camping.jpg" alt="Me, fr fr, on god" width="1500" height="600">
-  <marquee style="color: black;font-size:20vw;" width="1500" class="centered">Nawic</marquee>
+  <div class="centered">
+    <img class="centered2" width="950px" src="/myworld.gif">
+  </div>
+<img class="w3-image" src="/background_1.gif" alt="Me, fr fr, on god" width=100%>
+
+  <marquee style="color: white;font-size:20vw;" width=100% class="centered2">
+    <div>
+    <img src="/cloud.png">
+    <img src="/cloud.png">
+    <img src="/cloud.png">
+    </div>
+  </marquee>
   <marquee
     direction="down"
-    width="1500"
-    height="600"
+    width="200%"
+    height="100%"
     behavior="alternate"
     class="centered"
     truespeed
     scrolldelay="5"
-    style="color: black;">
-    <marquee behavior="alternate" class="centered">Andreas</marquee>
+    style="color: white;">
+    <marquee behavior="alternate" class="centered"><img src="/cloud.png"></marquee>
   </marquee>
+  
 </div>
   
   <!-- Navbar (placed at the bottom of the header image) -->
   <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
     <a href="#" class="w3-bar-item w3-button">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#me" class="w3-bar-item w3-button">Who am i?</a>
+    <a href="#anime" class="w3-bar-item w3-button">My Anime rambling</a>
+    <a href="#links" class="w3-bar-item w3-button">Links</a>
+    <a href="#visitor" class="w3-bar-item w3-button">You are Visitor #: <span id="hitcount"></span></a>
+    <a href="#visitor" class="w3-bar-item w3-button">Last Updated: <span id="lastupdate"></span></a>
   </div>
 </header>
 
-<!-- Navbar on small screens -->
-<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
-<div class="w3-bar w3-light-grey">
-  <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#portfolio" class="w3-bar-item w3-button">Portfolio</a>
-  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-</div>
-</div>
-<!-- Page content -->
-<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
 
-  <!-- Images (Portfolio) -->
-   <div width="1600" class="container"> 
-    <img src="/bilder/construction_2.gif""></img>
-    <img src="/bilder/construction_1.png"></img> 
-    <img src="/bilder/construction_2.gif""></img> 
-    <img src="/bilder/construction_1.png"></img> 
-    <img src="/bilder/construction_2.gif""></img>
-    <img src="/bilder/construction_1.png"></img> 
-    <img src="/bilder/construction_2.gif""></img>
-    <img src="/bilder/construction_1.png"></img> 
-    <img src="/bilder/construction_2.gif""></img>
-    <img src="/bilder/construction_1.png"></img> 
-    <img src="/bilder/construction_2.gif""></img>
-  </div>
-  <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountainskies.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
-  <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
+<!-- Page content -->
+
+<p style="font-size:2vw;"></p>
+
+<div width="150%" class="container"> 
+  <img src="/construction_2.gif">
+  <img src="/construction_1.png">
+  <img src="/construction_2.gif">
+  <img src="/construction_1.png">
+  <img src="/construction_2.gif">
+</div>
+<!-- About me -->
+<div class="w3-content w3-padding-large w3-margin-top" id="me">
+Hello, I'm Nawic and this is my little corner of the good ol' web and my tiny salute to the old internet. 
+  
+
 
   <!-- Contact -->
   <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
@@ -111,27 +148,54 @@
     <hr>
     <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
 
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" required name="Name">
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" required name="Email">
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" required name="Message">
-      </div>
-      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-    </form><br>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    
 
   </div>
 
 <!-- End page content -->
 </div>
 
+    <h1>Hello, I'm Nawic!</h1>
+
+    <p>This is a paragraph! Here's how you make a link: <a href="https://neocities.org">Neocities</a>.</p>
+
+    <p>Here's how you can make <strong>bold</strong> and <em>italic</em> text.</p>
+
+    <p>Here's how you can add an image:</p>
+    <img src="/neocities.png">
+
+    <p>Here's how to make a list:</p>
+
+    <ul>
+      <li>First thing</li>
+      <li>Second thing</li>
+      <li>Third thing</li>
+    </ul>
+
+    <p>To learn more HTML/CSS, check out these <a href="https://neocities.org/tutorials">tutorials</a>!</p>
+
+
+<!-- Visitor Counter -->
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var site_data = JSON.parse(this.responseText);
+        var num_arr = site_data.info.views.toString().split("");
+        var num_str = "";
+        for (i = 0; i < num_arr.length; i++) {
+            num_str += num_arr[i];
+            if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ) {num_str += ",";}
+            var date_str = site_data.info.last_updated;
+            var date_obj = new Date(site_data.info.last_updated);
+            document.getElementById("lastupdate").innerHTML = (date_obj.getMonth()+1) + "-" + date_obj.getDate() + "-" + date_obj.getFullYear();
+        }
+        document.getElementById("hitcount").innerHTML = num_str;
+    }
+};
+xhttp.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=nawic", true);
+xhttp.send();
+</script>
 </body>
 </html>
